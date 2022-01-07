@@ -23,3 +23,26 @@ db.comments.insertMany([{
 'time': 3
 }])
 
+update 
+
+db.comments.update({name: 'pallavi'},
+{'name': 'pallavi shekhawat',
+'employee': 'lumiq',
+'time': 1
+})
+
+inc operator
+
+db.comments.update({name: 'Lovish'},
+{$inc: {
+time: 1
+}})
+
+
+rename
+db.comments.update({name: 'pooja'},
+{$rename: {
+time: 'month time'
+}})
+
+
