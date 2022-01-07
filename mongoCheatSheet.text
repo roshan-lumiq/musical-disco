@@ -8,7 +8,7 @@ db.comments.insert([{
 insert many rows
 
 db.comments.insertMany([{
-'name': 'pallavi',
+'name': 'pallavi shekhawat',
 'employee': 'lumiq',
 'time': 1
 },
