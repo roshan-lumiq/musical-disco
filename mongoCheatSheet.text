@@ -16,10 +16,10 @@ db.comments.insertMany([{
 {'name': 'Lovish',
 'employee': 'tcs',
 'time': 2
-},
-
-{'name': 'pooja',
-'employee': 'wipro',
-'time': 3
 }])
+
+
+
+abb dekhte hai kya hota hai 
+
 
