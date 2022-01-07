@@ -1,0 +1,48 @@
+insert rows
+db.comments.insert([{
+'name': 'pallavi',
+'employee': 'lumiq',
+'time': 1
+})
+
+insert many rows
+
+db.comments.insertMany([{
+'name': 'pallavi',
+'employee': 'lumiq',
+'time': 1
+},
+
+{'name': 'Lovish',
+'employee': 'tcs',
+'time': 2
+},
+
+{'name': 'pooja',
+'employee': 'wipro',
+'time': 3
+}])
+
+update 
+
+db.comments.update({name: 'pallavi'},
+{'name': 'pallavi shekhawat',
+'employee': 'lumiq',
+'time': 1
+})
+
+inc operator
+
+db.comments.update({name: 'Lovish'},
+{$inc: {
+time: 1
+}})
+
+
+rename
+db.comments.update({name: 'pooja'},
+{$rename: {
+time: 'month time'
+}})
+
+
